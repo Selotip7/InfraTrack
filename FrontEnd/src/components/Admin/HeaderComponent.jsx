@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Header() {
   return (
     <>
-      <div className=" w-full flex justify-between px-3 h-16  items-center font-sans ">
+      <div className=" w-full flex justify-between px-3 h-[90px]  items-center font-sans ">
         {/* <div className="flex justify-between px-3"> */}
         <div id="left-item" className="">
           <h3 className="text-[20px] font-medium">Dashboard</h3>
