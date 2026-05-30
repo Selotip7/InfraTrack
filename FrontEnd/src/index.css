@@ -3,7 +3,7 @@
 
 
 :root {
-  
+  --primary-admin:#001c4f;
   --primary      : #22C55E;
   --primary-Dark : #16A34A;
   --background   : #FFFFFF;
@@ -44,6 +44,7 @@
 }
 
 @theme {
+  --color-primary-admin:var(--primary-admin);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-danger: var(--danger);
