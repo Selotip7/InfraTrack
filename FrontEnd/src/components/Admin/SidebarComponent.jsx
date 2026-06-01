@@ -9,7 +9,7 @@ export default function Sidebar(){
 
   return (
     <>
-      <styles></styles>
+      
       <div className="flex flex-col w-56 h-screen bg-primary-admin text-white ">
         <div
           id="brand"
