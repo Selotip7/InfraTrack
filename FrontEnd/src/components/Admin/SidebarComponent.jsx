@@ -13,7 +13,7 @@ export default function Sidebar(){
       <div className="flex flex-col w-56 h-screen bg-primary-admin text-white ">
         <div
           id="brand"
-          className="relative flex h-[90px] items-center gap-3 px-3 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-[90%] after:-translate-x-1/2 after:bg-white"
+          className="relative flex py-4 items-center gap-3 px-3 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-[90%] after:-translate-x-1/2 after:bg-white"
         >
           <div id="logo" className="w-[50px] ">
             <img src={logo} className="rounded-[5px]" />
