@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Header() {
   return (
     <>
-      <div className=" w-full flex justify-between px-4 h-[90px]  items-center font-sans ">
+      <div className=" w-full flex justify-between px-6 py-4 shrink-0   items-center font-sans ">
         {/* <div className="flex justify-between px-3"> */}
         <div id="left-item" className="">
           <h3 className="text-[20px] font-medium">Dashboard</h3>
@@ -11,7 +11,10 @@ export default function Header() {
             Welcome Back, Admin Here's what's happening today
           </p>
         </div>
-        <div id="right-item" className="flex items-center justify-between gap-3 ">
+        <div
+          id="right-item"
+          className="flex items-center justify-between gap-3 "
+        >
           <button
             id="notification"
             className=" bg-white relative p-2 rounded-md  flex justify-center items-center shadow-[0_0_3px_2px_rgba(0,0,0,0.1)]"
@@ -32,7 +35,6 @@ export default function Header() {
               <p>May 24, 2026</p>
             </div>
           </div>
-    
         </div>
         {/* </div> */}
       </div>
