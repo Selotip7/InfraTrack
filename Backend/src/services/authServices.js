@@ -2,6 +2,7 @@ import dotenv from "dotenv"
 dotenv.config();
 import pool from "../conn.js"
 import bcrypt from  "bcrypt"
+import { asyncHandler } from "#src/handler/asyncHandler.js";
 
 
 export const register=async (req) =>{
@@ -13,8 +14,21 @@ export const register=async (req) =>{
     [name,email,hashedPassword,role_id],
   );
   console.log("result",result);
-  return result.row
+  return result
 
 
 }
 
+
+export const login=async(req)=>{
+  const {email}=req.body
+  const data=await pool.query(
+    "select from users where email = $1",
+    [email]
+  )
+
+  if(!data){
+    return data
+  }
+  const isMatch=await bcrypt.compare()
+};
