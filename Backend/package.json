@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Akhyar",
+  "type": "module",
+  "main": "index.js",
+  "imports": {
+    "#src/*": "./src/*",
+    "#routes/*": "./routes/*",
+    "#controller/*": "./controllers/*",
+    "#services/*": "./services/*"
+  },
+  "scripts": {
+    "migrate:create": "node-pg-migrate create",
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "pg": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "dotenv-cli": "^11.0.0",
+    "node-pg-migrate": "^8.0.4"
+  }
+}
