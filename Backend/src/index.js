@@ -4,9 +4,9 @@ dotenv.config()
 import express from 'express'
 import cors from "cors"
 // import router
-import authRouter from "#src/routes/auth.js"
+import authRouter from "#src/routes/auth.route.js"
 // import handler
-import { errorHandler } from "./handler/errorHandler"
+import { errorHandler } from "./handler/error.handler"
 
 const app=express()
 const PORT= process.env.PORT;
@@ -15,7 +15,10 @@ const PORT= process.env.PORT;
 //   res.mess
 // })
 app.use(express.json());
+
 app.use("/auth",authRouter)
+// app.use("/user")
+
 app.use(errorHandler)
 
 app.listen(PORT,()=>{
