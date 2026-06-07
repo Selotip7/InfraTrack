@@ -9,6 +9,13 @@ export const register=async (req) =>{
     "insert into users (name,email,password,role_id) values ($1,$2,$3,$4) returning *",
     [name,email,hashedPassword,role_id],
   );
+
+  if(!result){
+    const error = new Error("Failed to create user");
+    error.code = 400;
+    throw error;
+  }
+
   console.log("result",result);
   return result
 
