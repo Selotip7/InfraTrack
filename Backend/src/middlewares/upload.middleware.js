@@ -6,12 +6,12 @@ const storage=multer.diskStorage({
   },
 
   filename:(req,file,cb)=>{
-    const uniquesName=
+    const uniqueName=
       Date.now()+"-"+file.originalname;
     cb(null,uniqueName)
   }
 });
 
 export const upload = multer({
-  storage
+  storage:storage
 });
