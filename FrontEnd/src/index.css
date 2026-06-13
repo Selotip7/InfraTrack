@@ -1,11 +1,11 @@
 @import "tailwindcss";
-
+/* @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap'); */
 
 
 :root {
   --primary-admin:#001c4f;
-  --primary      : #22C55E;
-  --primary-Dark : #16A34A;
+  --primary      : #c6ffdc;
+  --primary-dark : #16A34A;
   --background   : #FFFFFF;
   --soft-BG      : #F8FAFC;
   --heading      : #0F172A;
@@ -93,26 +93,24 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  
 }
 
 h1 {
-  font-size: 56px;
+  /* font-size: 56px; */
   letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
+  /* margin: 32px 0; */
+  /* @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
-  }
+  } */
 }
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  /* margin: 0 0 8px; */
+
 }
 p {
   margin: 0;
