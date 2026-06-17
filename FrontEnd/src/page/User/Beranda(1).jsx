@@ -7,8 +7,6 @@ export default function Beranda() {
   // const [screenSize,setScreenSize]=useState(window.innerWidth)
   const firstCard =
     "flex flex-col bg-white  rounded-xl border border-slate-200 p-4  items-center ";
-
-  const md = "flex items-center justify-center";
   return (
     <>
       <style>
@@ -35,13 +33,13 @@ export default function Beranda() {
       `}
       </style>
       <div
-        className="relative flex flex-col mt-[40px]  w-full  h-[680px] md:h-[600px] lg:h-[610px] bg-no-repeat  bg-cover bg-center pt-5 "
-        // style={{1
+        className="relative flex flex-col mt-[40px]  w-full  h-[550px]   bg-no-repeat  bg-cover bg-center pt-5 "
+        // style={{
         //   backgroundImage: `url(${background})`,
         //   // backgroundSize: cive,
         // }}
       >
-        <img src={background} className="w-[2000px] h-[520px] "></img>
+        <img src={background} className="w-[2000px] h-full "></img>
         <div className="px-10 md:px-10 ">
           <div className="flex flex-col gap-[40px] absolute top-0  ">
             <p className="py-1 px-2 bg-primary max-w-[280px] text-center text-[13px] font-medium rounded-2xl">
@@ -73,7 +71,7 @@ export default function Beranda() {
               </NavLink>
             </div>
           </div>
-          <div className="flex items-center justify-center  ">
+          <div className="flex items-center justify-center ">
             <div
               id="stats"
               className="hidden md:flex absolute top-[520px]   z-40 w-[80%]    border border-slate-200 rounded-2xl overflow-hidden bg-white py-3 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]"
@@ -135,74 +133,56 @@ export default function Beranda() {
                 </div>
               </div>
             </div>
-            {/* md */}
-            <div className="flex items-center justify-center">
-              <div className="absolute top-[520px] flex flex-col gap-2 items-center justify-center w-full  z-50">
-                <div
-                  id="stats"
-                  className="flex md:hidden  justify-center  z-40 w-[80%]    border border-slate-200 rounded-2xl overflow-hidden bg-white py-3 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]"
-                >
-                  <div className="flex w-[40%]  items-center px-2 gap-2">
-                    <div className="   z-40   border border-slate-200  overflow-hidden  py-4 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)] flex max-h-10 min-w-10 rounded-full  items-center justify-center bg-primary">
-                      <FontAwesomeIcon
-                        icon={faHome}
-                        className=" text-primary-dark rounded-[100px]"
-                      ></FontAwesomeIcon>
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-bold">12,458</p>
-                      <p className="text-[12px] font-medium text-gray-500 leading-5">
-                        Total Laporan
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex w-[40%]  items-center px-2 gap-2">
-                    <div className="   z-40   border border-slate-200  overflow-hidden  py-4 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)] flex max-h-10 min-w-10 rounded-full  items-center justify-center bg-primary">
-                      <FontAwesomeIcon
-                        icon={faHome}
-                        className=" text-primary-dark rounded-[100px]"
-                      ></FontAwesomeIcon>
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-bold">12,458</p>
-                      <p className="text-[12px] font-medium text-gray-500 leading-5">
-                        Total Laporan
-                      </p>
-                    </div>
-                  </div>
+            <div
+              id="stat-card"
+              className="md:hidden grid grid-cols-2 gap-3 absolute top-[520px] left-0 right-0 z-50 w-full px-4 "
+            >
+              <div className={`${firstCard} `}>
+                <div className="  z-40  flex  w-[50%]  py-4  border border-slate-200  overflow-hidden   shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]  rounded-full  items-center justify-center bg-primary">
+                  <FontAwesomeIcon
+                    icon={faHome}
+                    className=" text-primary-dark rounded-[100px]"
+                  ></FontAwesomeIcon>
                 </div>
-                <div
-                  id="stats"
-                  className="flex md:hidden justify-center  z-40 w-[80%]  border border-slate-200 rounded-2xl overflow-hidden bg-white py-3 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]"
-                >
-                  <div className="flex w-[40%]  items-center px-2 gap-2">
-                    <div className="   z-40   border border-slate-200  overflow-hidden  py-4 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)] flex max-h-10 min-w-10 rounded-full  items-center justify-center bg-primary">
-                      <FontAwesomeIcon
-                        icon={faHome}
-                        className=" text-primary-dark rounded-[100px]"
-                      ></FontAwesomeIcon>
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-bold">12,458</p>
-                      <p className="text-[12px] font-medium text-gray-500 leading-5">
-                        Total Laporan
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex w-[40%]  items-center px-2 gap-2">
-                    <div className="   z-40   border border-slate-200  overflow-hidden  py-4 px-2 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)] flex max-h-10 min-w-10 rounded-full  items-center justify-center bg-primary">
-                      <FontAwesomeIcon
-                        icon={faHome}
-                        className=" text-primary-dark rounded-[100px]"
-                      ></FontAwesomeIcon>
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-bold">12,458</p>
-                      <p className="text-[12px] font-medium text-gray-500 leading-5">
-                        Total Laporan
-                      </p>
-                    </div>
-                  </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-bold">12,458</p>
+                  <p>Total Laporan</p>
+                </div>
+              </div>
+              <div className={`${firstCard}`}>
+                <div className="  z-40  flex  w-[50%]  py-4  border border-slate-200  overflow-hidden   shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]  rounded-full  items-center justify-center bg-primary">
+                  <FontAwesomeIcon
+                    icon={faHome}
+                    className=" text-primary-dark rounded-[100px]"
+                  ></FontAwesomeIcon>
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-bold">12,458</p>
+                  <p>Total Laporan</p>
+                </div>
+              </div>
+              <div className={`${firstCard}`}>
+                <div className="  z-40  flex  w-[50%]  py-4  border border-slate-200  overflow-hidden   shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]  rounded-full  items-center justify-center bg-primary">
+                  <FontAwesomeIcon
+                    icon={faHome}
+                    className=" text-primary-dark rounded-[100px]"
+                  ></FontAwesomeIcon>
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-bold">12,458</p>
+                  <p>Total Laporan</p>
+                </div>
+              </div>
+              <div className={`${firstCard}`}>
+                <div className="  z-40  flex  w-[50%]  py-4  border border-slate-200  overflow-hidden   shadow-[0px_0px_20px_5px_rgba(0,0,0,0.1)]  rounded-full  items-center justify-center bg-primary">
+                  <FontAwesomeIcon
+                    icon={faHome}
+                    className=" text-primary-dark rounded-[100px]"
+                  ></FontAwesomeIcon>
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-bold">12,458</p>
+                  <p>Total Laporan</p>
                 </div>
               </div>
             </div>

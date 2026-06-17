@@ -7,7 +7,7 @@ export default function Navbar(){
   const [open,setOpen]=useState(false)
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 px-10 bg-white ">
+      <div className="fixed top-0 left-0 right-0 px-10 bg-white z-50 ">
         <nav className="flex  justify-between items-center  py-3">
           <div className="flex gap-2 items-center flex-shrink-0 ">
             <div id="logo" className="w-[50px]">
@@ -49,9 +49,9 @@ export default function Navbar(){
           </div>
         </nav>
       </div>
-      <div id="collapse" className="min-h-10">
+      <div id="collapse" className="min-h-10 bg">
         {open && (
-          <div className="absolute right-5 top-20 border border-slate-200 bg-white py-3 rounded-lg w-[200px] px-2 lg:hidden z-50">
+          <div className="fixed absolute right-5 top-20 border border-slate-200 bg-white py-3 rounded-lg w-[200px] px-2 lg:hidden z-50">
             <ul className="flex flex-col gap-3 px-3">
               <li>
                 <NavLink to="/">Beranda</NavLink>
