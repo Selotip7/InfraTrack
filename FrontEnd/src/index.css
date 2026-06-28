@@ -50,6 +50,11 @@
   --color-danger: var(--danger);
   --color-warning: var(--warning);
   --color-icon:#6b6375;
+
+  /* breakpoint or atur width pixel layar */
+   /* --breakpoint-xs: 500px; */
+   --breakpoint-mobile-m: 375px;
+   --breakpoint-mobile-l: 425px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
